@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './textfield.css';
 
-function TextfieldComp() {
+function TextfieldComp(props: { width: string }) {
+    const [inputValue, setInputValue] = useState('');
+ 
+
+  
+
     return (
         <div className="textfield">
-            <input className="Christmas-Input-box" style={{ width:"100%" }} />
+            <input
+                className="Christmas-Input-box"
+                style={{ width: `${props.width}%` }}
+              
+            />
+            
         </div>
     );
 }

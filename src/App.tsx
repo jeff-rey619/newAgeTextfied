@@ -6,9 +6,11 @@ import TextfieldComp from './Textfield';
 function App() {
     const [count, setCount] = useState(0);
 
-    return <>
-    <TextfieldComp/>
-    </>
+    return (
+        <>
+            <TextfieldComp width={'10'} />
+        </>
+    );
 }
 
 export default App;
